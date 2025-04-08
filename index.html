@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Audrey's Mail Generator</title>
+
+	<!-- Votre script JS -->
+	<script src="./script.js" defer></script>
+</head>
+
+<body>
+	<main>
+		<!-- Title -->
+		<section>
+			<h1>Audrey's Mail Generator 🤦🏻‍♀️</h1>
+		</section>
+
+		<!-- User input section -->
+		<section>
+			<input id="first-name-input" class="border" type="text" placeholder="Prénom...">
+			<input id="last-name-input" class="border" type="text" placeholder="Nom...">
+			<input id="company-name-input" class="border" type="text" placeholder="Entreprise...">
+		</section>
+
+		<!-- Buttons section -->
+		<section>
+			<button onclick="generateEmails()">Générer</button>
+			<button onclick="copyEmails()">Copier</button>
+		</section>
+
+		<!-- Output section -->
+		<section>
+			<p id="placeholder">Les e-mails générés apparaîtront ici.</p>
+			<pre id="output"></pre>
+		</section>
+	</main>
+</body>
+
+</html>
