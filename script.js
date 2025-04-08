@@ -17,7 +17,7 @@ function generateEmails() {
 	// If any field is empty, display error placeholder and hide result.
 	if (firstName === "" || lastName === "" || company === "") {
 		output.classList.add("hidden");
-		placeholder.textContent = "⚠️ Merci de remplir prénom, nom et entreprise.";
+		placeholder.textContent = "⚠️ Please fill in your first name, last name, and company name.";
 		placeholder.classList.remove("hidden");
 		return;
 	}
@@ -33,7 +33,7 @@ function generateEmails() {
 	for (let i = 0; i < domainVariants.length; i++) {
 		const domain = domainVariants[i];
 
-		emailsOutput += "\n<span> → " + domain + "</span>\n\n";
+		emailsOutput += '\n<span class="font-semibold text-pink-700"> → ' + domain + '</span>\n\n';
 
 		for (let j = 0; j < nameVariants.length; j++) {
 			emailsOutput += nameVariants[j] + "@" + domain + "\n";
